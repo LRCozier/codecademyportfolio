@@ -4,6 +4,11 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: fit-content;
+    width: 100%;
 }
 
 header {
@@ -14,17 +19,31 @@ header {
     display: block;
 }
 
-nav .navitem {
-    align-items: flex-start;
+header nav{
+    color: #101ee1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: inherit;
+header nav a {
+    text-decoration: none;
+    padding: 10px 15px;
 }
+
+.sections section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .sections section.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 h1, h2 {
     color: #333;
@@ -41,7 +60,10 @@ li {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
     background-color: #ffffff;
     color: #000;
 }
