@@ -33,11 +33,11 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    display: none;
     text-align: center;
+    display: none;
   }
 
-section:target{
+.mainsection{
     display: block;
 }
   
