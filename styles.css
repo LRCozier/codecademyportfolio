@@ -34,13 +34,11 @@ section {
     left: 0;
     width: 100%;
     text-align: center;
-    display: none;
   }
 
-.mainsection{
-    display: block;
+.hidden {
+    display: none;
 }
-  
 
 h1, h2 {
     color: #333;

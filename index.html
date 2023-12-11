@@ -11,38 +11,40 @@
 
     <header id="header">
         <nav>
-            <a href="#hero" class="navitem">Home</a>
-            <a href="#aboutme" class="navitem">About</a>
-            <a href="#projects" class="navitem">Projects</a>
-            <a href="#contact" class="navitem">Contact</a>
+           <ul>
+            <li onclick="showSection('hero')">Home</li>
+            <li onclick="showSection('aboutme')">About Me</li>
+            <li onclick="showSection('projects')">Projects</li>
+            <li onclick="showSection('contact')">Contact</li>
+           </ul>
         </nav>
 
     </header>
 
-    <main class="sections">
-    <section id="hero" class="mainsection">
+    <main>
+    <section id='hero' class=''>
         <div>
-        <h1 id="title">Luke Rudderham-Cozier</h1>
-        <p id="caption">Front End Web Developer</p>
+        <h1 id='title'>Luke Rudderham-Cozier</h1>
+        <p id='caption'>Front End Web Developer</p>
         </div>
     </section>
 
-    <section id="aboutme" class="">
-        <h2 class="sectionheading">Hello, I'm Luke</h2>
+    <section id='aboutme' class='hidden'>
+        <h2 class='sectionheading'>Hello, I'm Luke</h2>
         <p>From beggining my developer journey in July 2021, my passion for building amazing user interfaces has grown stronger.</p>
     </section>
 
-    <section id="projects" class="">
-        <h2 class="sectionheading">Projects</h2>
+    <section id='projects' class='hidden'>
+        <h2 class='sectionheading'>Projects</h2>
         <ul>
             <li>
-                <div class="container">
+                <div class='container'>
                     <h3>Project 1</h3>
                     <p>Description of Project 1.</p>
                 </div>
             </li>
             <li>
-                <div class="container">
+                <div class='container'>
                     <h3>Project 2</h3>
                     <p>Description of Project 2.</p>
                 </div>
@@ -50,19 +52,19 @@
         </ul>
     </section>
 
-    <section id="contact" class="">
-        <h2 class="sectionheading">Contact</h2>
+    <section id='contact' class='hidden'>
+        <h2 class='sectionheading'>Contact</h2>
         <form>
-            <label for="name">Name</label>
-            <input for="name" type="text"></input>
-            <label for="email">Email</label>
-            <input for="email" type="text"></input>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5"></textarea>
-            <input type="submit" value="Send Message" id="submitbutton">
+            <label for='name'>Name</label>
+            <input for='name' type='text'></input>
+            <label for='email'>Email</label>
+            <input for='email' type='text'></input>
+            <label for='message'>Message</label>
+            <textarea id='message' name='message' rows='5'></textarea>
+            <input type='submit' value='Send Message' id='submitbutton'>
         </form>
-        <a href="https://www.linkedin.com/in/luke-rudderham-cozier-30205343/" class="socials"> <i class="fa fa-linkedin-square"></i></a>
-        <a href="https://github.com/LRCozier?tab=repositories" class="socials"><i class="fa fa-github"></i></a>
+        <a href='https://www.linkedin.com/in/luke-rudderham-cozier-30205343/' class='socials'> <i class='fa fa-linkedin-square'></i></a>
+        <a href='https://github.com/LRCozier?tab=repositories' class='socials'><i class='fa fa-github'></i></a>
     </section>
     </main>
 

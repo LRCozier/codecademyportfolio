@@ -1,16 +1,9 @@
-// make only one section visible at a time
-document.addEventListener('DOMContentLoaded', () => {
-    const sitesections = document.querySelector('section') // get all sections on site
-});
+const showSection = (sectionId) => {
+    const sections = document.querySelectorAll('section'); //selects all sections in index.html
+    sections.forEach((section) => {
+        section.classList.add('hidden'); //adds the hidden class to each section element
+    });
 
-//add a click event listener for each section on site
-section.forEach(section => {
-    section.addEventListener('click'), () => {
-        // remove the active class from the current section
-        section.forEach(s => section.IdList.remove('mainsection'));
-
-        //assign the active class to the new, selected section
-        section.ClassList.add('mainsection');
-    };
-    
-});
+    let targetSection = document.getElementById(sectionId); //gets elelemnt ID for the targetted section
+    targetSection.classList.remove('hidden'); //removes the hidden class from the section so it can be displayed
+};
