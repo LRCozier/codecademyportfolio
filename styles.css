@@ -24,9 +24,11 @@ header nav{
     align-items: center;
 }
 
-header nav a {
+header nav li {
     text-decoration: none;
     padding: 10px 15px;
+    display: inline-block;
+
 }
 
 section {
