@@ -1,3 +1,5 @@
+// Function to reveal only one HTML section at a time. Initiated on clicking on specific navbar element in index.html
+
 const showSection = (sectionId) => {
     const sections = document.querySelectorAll('section'); //selects all sections in index.html
     sections.forEach((section) => {
